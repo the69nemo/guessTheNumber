@@ -100,4 +100,37 @@ body {
   font-family: 'Inter';
 }
 
+@media screen and (max-width: 500px) {
+  .game-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 50px);
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .countdown-text,
+  .label,
+  .tip {
+    font-size: 20px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .comment {
+    font-size: 18px;
+  }
+
+
+}
+
 
