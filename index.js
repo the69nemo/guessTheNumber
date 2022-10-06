@@ -14,12 +14,14 @@ function game() {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     userNumber = input.value;
-    
+
     if (userNumber == randomNum) {
       tip.textContent = "";
       commentText.textContent = '';
       countdownText.textContent = `Поздравляем, вы угадали число`;
-      button.setAttribute('disabled', 'disabled')
+      countdownText.style.color = 'red'
+      button.setAttribute('disabled', 'disabled');
+      button.style.backgroundColor = 'rgba(234, 240, 234, 0.582)'
     } else if ((userNumber < randomNum | userNumber > randomNum) && count !== 0){
       switch (count) {
         case 6:
@@ -65,6 +67,7 @@ function game() {
       tip.textContent = '';
       commentText.textContent = '';
       button.setAttribute('disabled', 'disabled');
+      button.style.backgroundColor = 'rgba(234, 240, 234, 0.582)'
     }
   });
 }
