@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <div class="game-block">
+      <div class="container">
+        <h1 class="title">Угадай число от 1 до 100 за 7 попыток</h1>
+        <p class="countdown-text">У вас 7 попыток</p>
+        <form class="form">
+          <fieldset class="input-container">
+            <label for="input" class="label">Введи число: </label>
+            <input type="number" min="1" max="100" class="input" />
+          </fieldset>
+          <button type="submit" class="button">Проверить</button>
+        </form>
+        <p class="tip"></p>
+        <p class="comment">Здесь будут показаны числа которые вы ввели</p>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
