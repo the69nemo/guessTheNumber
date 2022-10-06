@@ -82,7 +82,6 @@ function game() {
 }
 
 function restart () {
-  console.log('click reset')
   window.location.reload();
 }
 

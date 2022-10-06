@@ -3,6 +3,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Inter";
 }
 
 body {
@@ -37,7 +38,6 @@ body {
   margin: 0;
   font-size: 32px;
   font-weight: bold;
-  font-family: "Inter";
 }
 
 .countdown-text {
@@ -46,7 +46,7 @@ body {
   margin-top: 15px;
   font-size: 24px;
   font-weight: normal;
-  font-family: "Inter";
+
 }
 
 .form {
@@ -67,7 +67,6 @@ body {
   margin-top: 15px;
   font-size: 24px;
   font-weight: normal;
-  font-family: "Inter";
 }
 
 .input {
@@ -80,17 +79,22 @@ body {
   display: block;
   padding: 10px;
   font-size: 15px;
-  font-weight: normal;
-  font-family: "Inter";
+  font-weight: bold;
   background-color: rgb(52, 180, 52);
   border: 0;
   border-radius: 5px;
+  transition: transform 0.5s, opacity 0.3s, box-shadow 0.5s;
+}
+
+.button:hover {
+  transform: scale(0.95);
+  opacity: 0.9;
+  box-shadow: 0px 0px 7px 4px rgb(52, 180, 52, 0.7);
 }
 
 .reset {
   display: none;
   margin: 20px auto 0;
-
 }
 
 .comment {
@@ -99,7 +103,6 @@ body {
   margin-top: 15px;
   font-size: 20px;
   font-weight: normal;
-  font-family: "Inter";
 }
 
 .tip {
@@ -108,7 +111,6 @@ body {
   margin-top: 15px;
   font-size: 20px;
   font-weight: normal;
-  font-family: "Inter";
 }
 
 @media screen and (max-width: 500px) {
