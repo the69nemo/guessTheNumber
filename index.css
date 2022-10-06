@@ -87,6 +87,12 @@ body {
   border-radius: 5px;
 }
 
+.reset {
+  display: none;
+  margin: 20px auto 0;
+
+}
+
 .comment {
   text-align: center;
   margin: 0;
