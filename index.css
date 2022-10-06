@@ -13,6 +13,9 @@ body {
 }
 
 .game-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: calc(50% + 240px);
   left: calc(50% - 240px);
@@ -104,9 +107,6 @@ body {
 
 @media screen and (max-width: 500px) {
   .game-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 20px;
     left: 20px;

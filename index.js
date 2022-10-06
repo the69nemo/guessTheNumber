@@ -4,6 +4,8 @@ const tip = document.querySelector(".tip");
 const commentText = document.querySelector(".comment");
 const form = document.querySelector(".form");
 const button = document.querySelector(".button");
+const audioWin = new Audio('./music/win.mp3');
+const audioLoss = new Audio('./music/loss.mp3');
 
 function game() {
   let count = 6;
@@ -21,7 +23,8 @@ function game() {
       countdownText.textContent = `Поздравляем, вы угадали число`;
       countdownText.style.color = 'red'
       button.setAttribute('disabled', 'disabled');
-      button.style.backgroundColor = 'rgba(234, 240, 234, 0.582)'
+      button.style.backgroundColor = 'rgba(234, 240, 234, 0.582)';
+      audioWin.play();
     } else if ((userNumber < randomNum | userNumber > randomNum) && count !== 0){
       switch (count) {
         case 6:
@@ -68,6 +71,7 @@ function game() {
       commentText.textContent = '';
       button.setAttribute('disabled', 'disabled');
       button.style.backgroundColor = 'rgba(234, 240, 234, 0.582)'
+      audioLoss.play();
     }
   });
 }
