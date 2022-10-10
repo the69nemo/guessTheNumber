@@ -7,6 +7,7 @@ const button = document.querySelector(".button");
 const reset = document.querySelector(".reset");
 const audioWin = new Audio('./music/win.mp3');
 const audioLoss = new Audio('./music/loss.mp3');
+const title = document.querySelector(".title");
 
 function game() {
   let count = 6;
@@ -26,6 +27,7 @@ function game() {
       reset.style.display  = 'block';
       audioWin.play();
       form.style.display = 'none';
+      title.style.display = 'none';
     } else if ((userNumber < randomNum | userNumber > randomNum) && count !== 0){
       switch (count) {
         case 6:
@@ -51,7 +53,6 @@ function game() {
             tip.textContent = "Меньше"
           }
           count--;
-
           countdownText.textContent = `У вас осталось ${count + 1} попытки`;
           commentText.textContent = `Вы ввели: ${userNumberArr.join(', ')}`;
           input.value = '';
@@ -75,6 +76,7 @@ function game() {
       tip.textContent = '';
       commentText.textContent = '';
       form.style.display = 'none'
+      title.style.display = 'none';
       audioLoss.play();
       reset.style.display  = 'block';
     }
